@@ -1,19 +1,11 @@
-class Solution:
-    def isAnagram(self, s: str, t: str) -> bool:
-        if len(s) != len(t):
-            return False
-        
-        count = [0] * 26
-        
-        for i in range(len(s)):
-            count[ord(s[i]) - ord('a')] += 1  #anagram
-            count[ord(t[i]) - ord('a')] -= 1
-            
-        for val in count:
-            if val != 0:
-                return False
-                
-        return True
+# #1chk palin
+# back = ""
+# name = input("enter a string")
+# for i in range(len(name)-1 , -1 , -1):
+#     back+=name[i]
+# if back == name:
+#      print(True)
+# else: print(False)
 
     # #2>lrgest numb
     # numbers = [1 , 2 ,3 ,4]
@@ -43,14 +35,7 @@ class Solution:
 #     rev+=name[i]
 # print(rev)
 
-# #5chk palin
-# back = ""
-# name = input("enter a string")
-# for i in range(len(name)-1 , -1 , -1):
-#     back+=name[i]
-# if back == name:
-#      print(True)
-# else: print(False)
+
 
 #6 frequency 
 
@@ -104,12 +89,26 @@ class Solution:
 #     if(v==1):
 #         print(i)
 
-#two sum
-ls =[1,2,3,4,5,6]
-target = 5
-n = len(ls)
-for i in range(0 , n , 1):
-    for j in range(0 , n , 1):
-        if ls[i]+ls[j]==target:
-            print(i , j)
+#10 two sum
+# ls =[1,2,3,4,5,6]
+# target = 5
+# n = len(ls)
+# for i in range(n):
+#     for j in range(i+1 , n):
+#         if ls[i]+ls[j]==target:
+#             print(i , j)
+
+#         if len(s) != len(t):
+#             return False
+        
+#         count = [0] * 26
+        
+#         for i in range(len(s)):
+#             count[ord(s[i]) - ord('a')] += 1  #anagram
+#             count[ord(t[i]) - ord('a')] -= 1
             
+#         for val in count:
+#             if val != 0:
+#                 return False
+                
+#         return True
