@@ -34,7 +34,7 @@
 # frontend ={"saksham" , "ritesh" , "jarvis"}
 # backend = {"saksham" , "ritesh" ,"hari"}
 # print(frontend.union(backend))
-# print(frontend.intersection(backend))
+# print(frontend.intersection(backend)) //NOTE ---type cast to tupple and iterate
 # print(frontend.difference(backend))
 # print(frontend ^ backend)
 # unique_data = set(data)
