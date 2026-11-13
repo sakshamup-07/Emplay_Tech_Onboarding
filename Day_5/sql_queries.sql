@@ -116,3 +116,11 @@ e.department
 from employees e 
 right join departments d 
 on e.department =d.department_name;
+
+CREATE TABLE employees (
+    id INT PRIMARY KEY,
+    name VARCHAR(100),
+    department_id INT,
+    FOREIGN KEY (department_id)
+        REFERENCES departments(id)
+);
