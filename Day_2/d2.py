@@ -18,7 +18,7 @@
 
 # employee =("saksham " , "rajesh" , "saurav" , " krishna")
 # name1  , name2 , name3 , name4 = employee
-# print(name1)
+# print(name1)  //NOTE - PARTIAL UNPACKING
 # print(name2)
 # print(name3) #these are tupple unpacking
 
