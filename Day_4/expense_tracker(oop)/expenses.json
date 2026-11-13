@@ -3,5 +3,10 @@
         "amount": 2300.0,
         "category": "ms",
         "description": "ds"
+    },
+    {
+        "amount": 232.0,
+        "category": "fd",
+        "description": "fdf"
     }
 ]
