@@ -1,4 +1,3 @@
-
 import json
 from expense import Expense
 
@@ -32,8 +31,8 @@ class ExpenseManager:
         for expense in self.expenses:
             data.append(expense.to_dict())
 
-        with open("expenses.json", "w") as file:
-            json.dump(data, file, indent=4)
+            with open("expenses.json", "w") as file:
+                json.dump(data, file, indent=4)
 
     def add_expense(self):
         while True:
