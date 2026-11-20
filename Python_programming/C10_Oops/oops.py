@@ -1,10 +1,8 @@
 class Employee:
-    name = "Saksham"
-    salary = 9999999999
-    age = 22
-    def multi(self, x):
-        print(self.age*x)
+  name = "Saksham"
+  salary = 9999999999
+  def __init__(self , name ):
+    self.name = name
 
-dep = Employee()
-print(dep.name)
-dep.multi(5)
+e1 = Employee("Rohit")
+print(e1.name)
