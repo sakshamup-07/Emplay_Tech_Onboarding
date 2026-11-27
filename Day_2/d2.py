@@ -106,3 +106,13 @@ def test2(**kwargs):
     print(kwargs)
 
 test2(name="Saksham", skill="Python", age=22)
+
+
+punpack = [1 , 2 , 3 , 4, 5 ,6]
+x , _, y , *z = punpack
+print(x)  # 1
+print(y)  # 3
+print(z)  # [4, 5, 6]
+j , *_, k = punpack
+print(j)  # 1
+print(k)  # 6

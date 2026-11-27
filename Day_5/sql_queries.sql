@@ -124,3 +124,8 @@ CREATE TABLE employees (
     FOREIGN KEY (department_id)
         REFERENCES departments(id)
 );
+
+ALTER TABLE employees
+ADD COLUMN email VARCHAR(100);
+ALTER TABLE employees
+ALTER COLUMN salary TYPE NUMERIC(12,2);
